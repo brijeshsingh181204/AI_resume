@@ -1,0 +1,54 @@
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .animate-fadeIn {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+  
+  /* For input field animations */
+  input:focus {
+    transform: scale(1.01);
+    transition: all 0.2s ease;
+  }
+  
+  /* Glow effect for focused inputs */
+  input:focus {
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
+  }
+  
+  /* Button hover animation */
+  button:not(:disabled):hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.4);
+  }
+  
+  button {
+    transition: all 0.3s ease;
+  }
+  
+  /* Dark theme scrollbar */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #475569 #1e293b;
+  }
+  
+  *::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #1e293b;
+    border-radius: 4px;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #475569;
+    border-radius: 4px;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #64748b;
+  }
